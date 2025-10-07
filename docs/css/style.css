@@ -140,6 +140,6 @@
    }
 
    footer {
-       color: #f752b5;
-       line-height: 3;
+       color: #f752b5 !important;
+       line-height: 2;
    }
