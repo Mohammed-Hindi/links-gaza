@@ -1,0 +1,145 @@
+   body {
+       background-color: #111;
+       color: #fff;
+       font-family: 'Tajawal', sans-serif;
+       scroll-behavior: smooth;
+       padding-top: 70px;
+   }
+
+   .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ec1e9a' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+   }
+
+   /* صفحة الترحيب */
+   #welcomeScreen {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #111;
+       color: #00c48c;
+       z-index: 9999;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       opacity: 1;
+       transition: opacity 0.5s ease;
+       pointer-events: all;
+       /* تفعيل التفاعل أولاً */
+   }
+
+   #welcomeText {
+       font-size: 3rem;
+       opacity: 0;
+       transition: opacity 1s ease;
+   }
+
+   #welcomeSub {
+       font-size: 1.5rem;
+       opacity: 0;
+       transition: opacity 1s ease 0.5s;
+   }
+
+   @media (max-width: 576px) {
+       #welcomeText {
+           font-size: 2rem;
+       }
+
+       #welcomeSub {
+           font-size: 1rem;
+       }
+   }
+
+   .show {
+       opacity: 1 !important;
+   }
+
+   .nav-link {
+       color: #ec1e9a !important;
+   }
+
+   .nav-link:hover {
+       color: #c218d8 !important;
+   }
+
+   .card-title {
+       font-size: 1.4rem;
+       font-weight: bold;
+   }
+
+   .btn-custom {
+       background-color: #ff6f61;
+       border: none;
+   }
+
+   .btn-custom:hover {
+       background-color: #e65c4f;
+   }
+
+   /* ألوان تدريجية للمربعات */
+   .bg-gradient-1 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+   }
+
+   .bg-gradient-2 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+   }
+
+   .bg-gradient-3 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+   }
+
+   .bg-gradient-4 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+   }
+
+   .bg-gradient-5 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+   }
+
+   .bg-gradient-6 {
+       background: linear-gradient(135deg, #3C0070, #5A0080);
+       color: #333;
+   }
+
+
+
+   .card {
+       border-radius: 15px;
+       min-height: 200px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       padding: 20px;
+       background: linear-gradient(270deg, #3C0070, #5A0080, #3C0070);
+       background-size: 600% 600%;
+       animation: gradientShift 4s ease infinite;
+   }
+
+   @keyframes gradientShift {
+       0% {
+           background-position: 0% 50%;
+       }
+
+       50% {
+           background-position: 100% 50%;
+       }
+
+       100% {
+           background-position: 0% 50%;
+       }
+   }
+
+   .card .btn {
+       margin-top: 15px;
+       background: linear-gradient(135deg, #d800d1, #5A0080);
+       color: #f7bffe;
+   }
+
+   footer {
+       color: #f752b5;
+       line-height: 3;
+   }

@@ -1,0 +1,56 @@
+ body {
+     background-color: #111;
+     color: #fff;
+     font-family: 'Tajawal', sans-serif;
+     scroll-behavior: smooth;
+     padding-top: 70px;
+ }
+
+ .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ec1e9a' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+ }
+
+ .nav-link {
+     color: #ec1e9a !important;
+ }
+
+ .nav-link:hover {
+     color: #c218d8 !important;
+ }
+#orphansTitle{
+    color: #ff6f61;
+}
+ /* كاردات صفحة الوزارات والخدمات الحكومية */
+ #orphans .card {
+     border-radius: 15px;
+     min-height: 130px;
+     padding: 20px;
+     text-align: center;
+     color: #fff;
+     transition: transform 0.3s, box-shadow 0.3s;
+     background: linear-gradient(135deg, #8e2fe8, #965564);
+     /* تدرج موحد */
+     background-size: 200% 200%;
+ }
+
+ /* تأثير تكبير عند Hover */
+ #orphans .card:hover {
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+ }
+
+ /* أزرار متناسقة */
+ #orphans .btn-custom {
+    background: linear-gradient(135deg, #FF99CC, #FFB8DD);
+     color: #000000;
+     border: none;
+     transition: background 0.3s;
+ }
+
+ #orphans .btn-custom:hover {
+     background: linear-gradient(135deg, #ff8a72, #ff6f61);
+ }
+ footer {
+     color: #f752b5;
+     line-height: 3;
+ }
