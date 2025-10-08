@@ -52,5 +52,9 @@
  }
  footer {
      color: #f752b5;
-     line-height: 3;
+     line-height: 2;
+ }
+ .des , .company{
+     color: #f752b5;
+
  }
