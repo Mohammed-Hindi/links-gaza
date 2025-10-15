@@ -5,18 +5,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     text.classList.add("show");
     sub.classList.add("show");
-
-    // السماح للمستخدم بالنقر لتخطي الترحيب
-    welcome.addEventListener("click", hideWelcome);
-
-    // إخفاء تلقائي بعد 3 ثواني
+    welcome.addEventListener("click", hideWelcome)
     setTimeout(hideWelcome, 2000);
 
     function hideWelcome() {
         welcome.style.opacity = 0;
-        welcome.style.pointerEvents = "none"; // إزالة التفاعل فور الاختفاء
+        welcome.style.pointerEvents = "none"; 
         setTimeout(() => {
-            welcome.style.display = "none"; // السماح بالوصول الكامل للمحتوى
+            welcome.style.display = "none"; 
         }, 500);
     }
 });
@@ -29,22 +25,20 @@ document.querySelectorAll('.card').forEach(card => {
         card.classList.remove('hovered');
     });
 });
-// نختار كل الكروت
 const cards = document.querySelectorAll('.card');
 
-// لكل كارت نعمل وميض خفيف بشكل مستمر
 cards.forEach((card, index) => {
     let opacity = 1;
     let increasing = false;
 
     setInterval(() => {
         if (increasing) {
-            opacity += 0.005; // زيادة بسيطة
+            opacity += 0.005; 
             if (opacity >= 1) increasing = false;
         } else {
-            opacity -= 0.005; // تقليل بسيط
+            opacity -= 0.005; 
             if (opacity <= 0.92) increasing = true;
         }
         card.style.opacity = opacity;
-    }, 20 + index * 5); // اختلاف بسيط لتزامن طبيعي بين الكروت
+    }, 20 + index * 5); 
 });
